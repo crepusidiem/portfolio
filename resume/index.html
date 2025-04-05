@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="/portfolio/styles.css" />
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="/portfolio/">Home</a></li>
+            <li><a href="/portfolio/projects">Projects</a></li>
+            <li><a href="/portfolio/contact">Contact</a></li>
+            <li><a href="/portfolio/resume">Resume</a></li>
+            <li><a href="https://github.com/crepusidiem" target="_blank">Personal GitHub Profile</a></li>
+        </ul>
+    </nav>
   <main class="container">
     <header class="header" role="banner">
       <h1>Wenyao Yu</h1>
@@ -19,7 +28,7 @@
     <section>
       <h2>Profile</h2>
       <p>
-        A brief paragraph about yourself – your background, key strengths, and what you’re looking for. Keep it concise and relevant.
+        A dedicated machine learning engineer with a strong background in medical data analysis and a passion for developing innovative solutions. Proficient in Python, SQL, and various machine learning frameworks. Seeking to leverage expertise in a challenging role to contribute to impactful projects.
       </p>
     </section>
 
@@ -27,8 +36,8 @@
       <h2>Skills</h2>
       <ul class="skills-list">
         <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
+        <li>Pascal</li>
+        <li>C</li>
         <li>React</li>
         <li>Python</li>
         <li>SQL</li>
@@ -39,12 +48,16 @@
       <h2>Experience</h2>
 
       <article class="job">
-        <h3>Frontend Developer</h3>
-        <p><em>Tech Company Inc.</em> | <time datetime="2022-01">Jan 2022</time> – <time datetime="2024-04">Present</time></p>
+        <h3>Student Researcher</h3>
+        <p><em>Emory University HITI Lab</em> | <time datetime="2024-07">July 2024</time> – <time datetime="2024-09">Sept 2024</time></p>
         <ul>
-          <li>Developed responsive web applications using React and Tailwind CSS.</li>
-          <li>Collaborated with backend developers to integrate <a href="https://restfulapi.net/" target="_blank">RESTful APIs</a>.</li>
-          <li>Improved page load speed by 30% through performance optimizations.</li>
+          <li>Responsible for training AI models in the HITI Lab through paper reading and self-learning.</li>
+          <li>Trained and fine-tuned two sets of CNN (convolutional neural network) and ViT (vision transformer)
+                classifiers on two different chest x-ray medical imaging data to detect Pneumothorax,
+                including those hyperparameters and the early stopping conditions.</li>
+          <li>Used explainability solutions like GradCam++ to illustrate the CNN model's focus; ViTReciproCAM for ViT.</li>
+          <li>Reached 0.99 AUC (Area Under the Curve), 0.98 TPR (True Positive Rate), and 0.96 AP (Average Precision) for ViT and 0.91 AUC, 0.75 TPR, 0.83 AP on CNN.</li>
+          <li>Developed the <a href="https://github.com/crepusidiem/AI_Toolbox" target="_blank">attention map pipeline</a> for the lab alone to explain the focus of the timm ViT model for future use.</li>
         </ul>
       </article>
 
@@ -61,25 +74,8 @@
     <section>
       <h2>Education</h2>
       <article class="education">
-        <h3>B.Sc. in Computer Science</h3>
-        <p><em>University Name</em> | <time datetime="2018">2018</time> – <time datetime="2022">2022</time></p>
-        <p>Graduated with honors. Relevant coursework: Data Structures, Web Development, Database Systems.</p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-
-      <article class="project">
-        <h3>Portfolio Website</h3>
-        <p>Created a personal portfolio using HTML, CSS, and JavaScript to showcase projects and resume.</p>
-        <p><a href="https://yourportfolio.com" target="_blank">View Project</a></p>
-      </article>
-
-      <article class="project">
-        <h3>E-commerce App</h3>
-        <p>Built a full-stack e-commerce platform using React (frontend), Node.js/Express (backend), and MongoDB.</p>
-        <p><a href="https://github.com/yourusername/ecommerce-app" target="_blank">View on GitHub</a></p>
+        <h3>B.S. in Mathematics - Computer Science & Data Science</h3>
+        <p><em>University of California, San Diego</em> | <time datetime="2022">2022</time> – <time datetime="2026">Present</time></p>
       </article>
     </section>
   </main>
