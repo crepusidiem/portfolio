@@ -3,79 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Resume</title>
-  <link rel="stylesheet" href="/styles.css" />
-
+  <title>Wenyao Yu – Resume</title>
+  <link rel="stylesheet" href="/portfolio/styles.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="header">
+  <main class="container">
+    <header class="header" role="banner">
       <h1>Wenyao Yu</h1>
       <p class="contact-info">
-        📱(xxx) xxx-xxxx | 📍 San Diego, CA
+        📱(xxx) xxx-xxxx | 📍 San Diego, CA |
+        🌐 <a href="https://crepusidiem.github.io/portfolio/" target="_blank">crepusidiem.github.io/portfolio/</a>
       </p>
-    </div>
+    </header>
 
-    <div class="section">
-      <div class="section-title">Profile</div>
-      <p>A brief paragraph about yourself – your background, key strengths, and what you’re looking for. Keep it concise and relevant.</p>
-    </div>
+    <section>
+      <h2>Profile</h2>
+      <p>
+        A brief paragraph about yourself – your background, key strengths, and what you’re looking for. Keep it concise and relevant.
+      </p>
+    </section>
 
-    <div class="section">
-      <div class="section-title">Skills</div>
-      <div class="skills-list">
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">React</span>
-        <span class="skill">Python</span>
-        <span class="skill">SQL</span>
-        <!-- Add more as needed -->
-      </div>
-    </div>
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Python</li>
+        <li>SQL</li>
+      </ul>
+    </section>
 
-    <div class="section">
-      <div class="section-title">Experience</div>
-      <div class="job">
-        <div class="job-title">Frontend Developer</div>
-        <div class="job-company">Tech Company Inc. | Jan 2022 – Present</div>
+    <section>
+      <h2>Experience</h2>
+
+      <article class="job">
+        <h3>Frontend Developer</h3>
+        <p><em>Tech Company Inc.</em> | <time datetime="2022-01">Jan 2022</time> – <time datetime="2024-04">Present</time></p>
         <ul>
           <li>Developed responsive web applications using React and Tailwind CSS.</li>
-          <li>Collaborated with backend developers to integrate RESTful APIs.</li>
+          <li>Collaborated with backend developers to integrate <a href="https://restfulapi.net/" target="_blank">RESTful APIs</a>.</li>
           <li>Improved page load speed by 30% through performance optimizations.</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="job">
-        <div class="job-title">Web Designer Intern</div>
-        <div class="job-company">Creative Studio | Jun 2021 – Dec 2021</div>
+      <article class="job">
+        <h3>Web Designer Intern</h3>
+        <p><em>Creative Studio</em> | <time datetime="2021-06">Jun 2021</time> – <time datetime="2021-12">Dec 2021</time></p>
         <ul>
           <li>Assisted in designing websites and landing pages for clients.</li>
-          <li>Created wireframes and mockups using Figma and Adobe XD.</li>
+          <li>Created wireframes and mockups using <a href="https://figma.com" target="_blank">Figma</a> and Adobe XD.</li>
         </ul>
-      </div>
-    </div>
+      </article>
+    </section>
 
-    <div class="section">
-      <div class="section-title">Education</div>
-      <div class="education">
-        <div class="degree">B.Sc. in Computer Science</div>
-        <div class="school">University Name | 2018 – 2022</div>
+    <section>
+      <h2>Education</h2>
+      <article class="education">
+        <h3>B.Sc. in Computer Science</h3>
+        <p><em>University Name</em> | <time datetime="2018">2018</time> – <time datetime="2022">2022</time></p>
         <p>Graduated with honors. Relevant coursework: Data Structures, Web Development, Database Systems.</p>
-      </div>
-    </div>
+      </article>
+    </section>
 
-    <div class="section">
-      <div class="section-title">Projects</div>
-      <div class="project">
-        <div class="project-name">Portfolio Website</div>
-        <p>Created a personal portfolio website using HTML, CSS, and JavaScript to showcase my projects and resume.</p>
-      </div>
-      <div class="project">
-        <div class="project-name">E-commerce App</div>
-        <p>Built a full-stack e-commerce platform using React for frontend and Node.js/Express for backend with MongoDB.</p>
-      </div>
-    </div>
-  </div>
+    <section>
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Portfolio Website</h3>
+        <p>Created a personal portfolio using HTML, CSS, and JavaScript to showcase projects and resume.</p>
+        <p><a href="https://yourportfolio.com" target="_blank">View Project</a></p>
+      </article>
+
+      <article class="project">
+        <h3>E-commerce App</h3>
+        <p>Built a full-stack e-commerce platform using React (frontend), Node.js/Express (backend), and MongoDB.</p>
+        <p><a href="https://github.com/yourusername/ecommerce-app" target="_blank">View on GitHub</a></p>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
