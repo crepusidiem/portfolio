@@ -44,6 +44,13 @@ nav {
             border-bottom-width: 1px;
             border-bottom-style: solid;
             border-bottom-color: oklch(80% 3% 200);
+
+            &:hover {
+              border-bottom-width: 1px;
+              border-bottom-style: solid;
+              border-bottom-color: var(--color-accent);
+              padding-bottom: 0.5px;
+            }
           }
       }
   
