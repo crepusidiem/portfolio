@@ -6,7 +6,7 @@ body {
     padding: auto;
     max-width: fit-content;
     margin-inline: max(1em, (100% - 100ch) / 2);
-    background-color: #cccdea;
+    background-color: #bbbce2;
   }
 
 nav {
@@ -25,26 +25,26 @@ nav {
       li {
           display: contents;
           margin: 1em;
+
+          a {
+            flex: 1;
+            text-decoration: none;
+            color: inherit;
+            text-align: center;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: oklch(80% 3% 200);
+          }
       }
   
     }
-
-    a {
-        text-decoration: none;
-        flex: 1;
-        color: #333;
-        font-weight: bold;
-        padding: 0.5em 1em;
-        border-radius: 0.5em;
-        transition: background-color 0.3s ease, color 0.3s ease;
-
-        &:hover {
-            background-color: #333;
-            color: #fff;
-        }
-    }
   }
 
-
+.current {
+  border-bottom-width: 0.4em;
+  border-bottom-color: oklch(80% 3% 200);
+  }
 
   
