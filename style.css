@@ -17,6 +17,7 @@ nav {
     background-color: #fff;
     border-radius: 0.5em;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    margin: 2em auto;
 
     ul {
       display: contents;
