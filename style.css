@@ -2,6 +2,10 @@
   --color-accent: oklch(65% 50% 0);
 }
 
+h2 {
+  font-size: 2em;
+  margin: 0;
+}
 
 body {
     /* Set line height to 1.5 times the font size
@@ -101,7 +105,7 @@ form label {
 form input,
 form textarea {
   font-family: inherit;
-  padding: 0.5em;
+  padding: 2em;
   border: 1px solid #ccc;
   border-radius: 0.3em;
   font-size: 1em;
@@ -130,4 +134,17 @@ form button:hover {
   max-width: 120ch;
   margin: 0 auto;
   padding: 2em 1em;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap: 2em;
+}
+
+article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em;
 }
