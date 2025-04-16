@@ -117,3 +117,9 @@ form button {
 form button:hover {
   background-color: oklch(55% 50% 0);
 }
+
+.container {
+  max-width: 100ch;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
