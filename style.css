@@ -82,7 +82,7 @@ form {
   font-family: inherit;
   width: 100%;
   max-width: 40ch;
-  margin: 2em 5em;
+  margin: 2em auto;
   padding: 1.5em;
   background-color: #fff;
   border-radius: 0.5em;
@@ -123,7 +123,7 @@ form button:hover {
 }
 
 .container {
-  max-width: 100ch;
+  max-width: 120ch;
   margin: 0 auto;
   padding: 2em 1em;
 }
