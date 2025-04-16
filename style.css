@@ -116,6 +116,10 @@ form button {
   color: white;
   cursor: pointer;
   align-self: start;
+  display: grid;
+  grid-template-columns: subgrid;
+  font-weight: bold;
+  grid-column: 1 / -1;
 }
 
 form button:hover {
