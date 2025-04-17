@@ -133,6 +133,7 @@ form button {
   grid-template-columns: subgrid;
   font-weight: bold;
   grid-column: 1 / -1;
+  grid-template-columns: 1fr;
 }
 
 form button:hover {
