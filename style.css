@@ -41,8 +41,7 @@ body {
        */
     accent-color: var(--color-accent);
     font: 100%/1.5 Georgia, serif;
-    padding: 3%;
-    width: 60%;
+    padding: 2%;
     margin-inline: max(1em, (100% - 100ch) / 2);
     background-color: #e4e5f0;
     display: flex;
