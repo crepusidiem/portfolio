@@ -2,18 +2,27 @@
   --color-accent: oklch(65% 50% 0);
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1 {
   font-family: inherit;
   font-weight: normal;
   margin: 0;
   line-height: 1.1;
   text-wrap: balance;
+  font-size: 3em;
+  
+  h2 {
+    font-size: 2.5em;
+
+    h3 {
+      font-size: 2em;
+
+      h4 {
+        font-size: 1.8em;
+      }
+    }
+  }
 }
 
-h2 {
-  font-size: 2em;
-  margin: 0;
-}
 
 body {
     /* Set line height to 1.5 times the font size
