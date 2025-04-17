@@ -11,7 +11,7 @@ h1, h2, h3, h4 {
   font-weight: bold;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  line-height: 1.2;
+  line-height: 1.1;
   color: #222; /* Dark gray for less harshness than pure black */
 }
 
