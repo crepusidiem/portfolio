@@ -6,29 +6,33 @@ p {
   text-wrap: balance;
 }
 
-h1 {
-  font-family: inherit;
-  font-weight: normal;
-  margin: 0;
-  line-height: 1.1;
-  text-wrap: balance;
-  font-size: 3em;
-  
-  h2 {
-    font-size: 2.5em;
-    margin: 0;
-
-    h3 {
-      font-size: 2em;
-      margin: 0;
-
-      h4 {
-        font-size: 1.8em;
-        margin: 0;
-      }
-    }
-  }
+h1, h2, h3, h4 {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+  color: #222; /* Dark gray for less harshness than pure black */
 }
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600; /* Slightly less bold */
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500; /* Lighter weight to show it's less important */
+}
+
 
 
 body {
