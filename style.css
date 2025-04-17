@@ -49,7 +49,7 @@ nav {
     background-color: #fff;
     border-radius: 0.5em;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
-    margin: 2em auto;
+    margin: 0.8em auto 2.5em auto;
 
     ul {
       display: contents;
@@ -70,7 +70,7 @@ nav {
             border-bottom-color: oklch(80% 3% 200);
 
             &:hover {
-              border-bottom-width: 1px;
+              border-bottom-width: 0.4em;
               border-bottom-style: solid;
               border-bottom-color: var(--color-accent);
               padding-bottom: 0.5px;
