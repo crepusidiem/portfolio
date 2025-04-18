@@ -11,11 +11,15 @@ function $$(selector, context = document) {
   
 // currentLink?.classList.add('current');
 
+const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+? "/"                  // Local server
+: "https://crepusidiem.github.io/portfolio/";         // GitHub Pages repo name
+
 let pages = [
-    { url: '/portfolio/', title: 'Home' },
-    { url: '/portfolio/projects/', title: 'Projects' },
-    { url: '/portfolio/resume/', title: 'Resume' },
-    { url: '/portfolio/contact/', title: 'Contact' },
+    { url: '', title: 'Home' },
+    { url: 'projects/', title: 'Projects' },
+    { url: 'resume/', title: 'Resume' },
+    { url: 'contact/', title: 'Contact' },
     { url: 'https://github.com/crepusidiem/', title: 'Github' },
   ];
   
@@ -27,6 +31,9 @@ document.body.prepend(nav);
 for (let p of pages) {
     let url = p.url;
     let title = p.title;
+    
+    url = !url.startsWith('http') ? BASE_PATH + url : url;
+
 
     let li = document.createElement('li');
     let a = document.createElement('a');
@@ -34,13 +41,16 @@ for (let p of pages) {
     a.textContent = title;
 
     if (url.startsWith('http')) {
-        a.setAttribute('target', '_blank');
+        a.target = '_blank';
     }
 
     li.appendChild(a);
     ul.appendChild(li);
   }
   
-  const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  ? "/"                  // Local server
-  : "/website/";         // GitHub Pages repo name
+
+
+if (!url.startsWith('http')) {
+url = BASE_PATH + url;
+}
+  
