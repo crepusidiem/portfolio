@@ -2,6 +2,10 @@
   --color-accent: oklch(65% 50% 0);
 }
 
+#Intro {
+  text-align: center;
+}
+
 p {
   text-wrap: balance;
 }
