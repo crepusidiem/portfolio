@@ -56,8 +56,36 @@ for (let p of pages) {
   }
   
 
+// Add a theme selector to the top of the page
+let themeLabel = document.createElement('label');
+themeLabel.textContent = 'Theme: ';
+themeLabel.classList.add('color-scheme');
 
-if (!url.startsWith('http')) {
-url = BASE_PATH + url;
+let themeSelector = document.createElement('select');
+let themes = [
+  { value: 'light', text: 'Light' },
+  { value: 'dark', text: 'Dark' },
+  { value: 'system', text: 'System Default' }
+];
+
+for (let theme of themes) {
+  let option = document.createElement('option');
+  option.value = theme.value;
+  option.textContent = theme.text;
+  themeSelector.appendChild(option);
 }
+
+themeSelector.addEventListener('change', (event) => {
+  let selectedTheme = event.target.value;
+  document.documentElement.setAttribute('data-theme', selectedTheme);
+  localStorage.setItem('theme', selectedTheme);
+});
+
+// Load saved theme from localStorage
+let savedTheme = localStorage.getItem('theme') || 'system';
+themeSelector.value = savedTheme;
+document.documentElement.setAttribute('data-theme', savedTheme);
+
+themeLabel.appendChild(themeSelector);
+document.body.prepend(themeLabel);
   
