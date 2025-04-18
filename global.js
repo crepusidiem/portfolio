@@ -25,8 +25,13 @@ document.body.prepend(nav);
 for (let p of pages) {
     let url = p.url;
     let title = p.title;
-    // next step: create link and add it to nav
+    
     nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
+    
+    // Open new tab for external links
+    if (url.startsWith('http')) {
+        nav[4].setAttribute('target', '_blank');
+      }
   }
   
   const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
