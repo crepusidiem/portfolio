@@ -189,3 +189,10 @@ article {
   grid-row: span 4;
   gap: 1em;
 }
+
+.color-scheme {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font: 80%/1.5 Georgia, serif;
+}
