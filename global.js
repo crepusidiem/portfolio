@@ -12,10 +12,10 @@ function $$(selector, context = document) {
 // currentLink?.classList.add('current');
 
 let pages = [
-    { url: '', title: 'Wenyao Yu: Personal site and portfolio' },
-    { url: 'projects/', title: 'Projects' },
-    { url: 'resume/', title: 'Wenyao Yu – Resume' },
-    { url: 'contact/', title: 'Contact' },
+    { url: '/portfolio/', title: 'Home' },
+    { url: '/portfolio/projects/', title: 'Projects' },
+    { url: '/portfolio/resume/', title: 'Resume' },
+    { url: '/portfolio/contact/', title: 'Contact' },
     { url: 'https://github.com/crepusidiem/', title: 'Github' },
   ];
   
