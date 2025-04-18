@@ -20,18 +20,25 @@ let pages = [
   ];
   
 let nav = document.createElement('nav');
+let ul = document.createElement('ul');
+nav.appendChild(ul);
 document.body.prepend(nav);
   
 for (let p of pages) {
     let url = p.url;
     let title = p.title;
-    
-    nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
-    
-    // Open new tab for external links
+
+    let li = document.createElement('li');
+    let a = document.createElement('a');
+    a.href = url;
+    a.textContent = title;
+
     if (url.startsWith('http')) {
-        nav[4].setAttribute('target', '_blank');
-      }
+        a.setAttribute('target', '_blank');
+    }
+
+    li.appendChild(a);
+    ul.appendChild(li);
   }
   
   const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
