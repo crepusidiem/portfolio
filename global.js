@@ -74,23 +74,17 @@ for (let theme of themes) {
   themeSelector.appendChild(option);
 }
 
+// Set the initial value based on the current color scheme
+let currentScheme = getComputedStyle(document.documentElement).getPropertyValue('color-scheme').trim();
+themeSelector.value = currentScheme === 'dark' ? 'dark' : currentScheme === 'light' ? 'light' : 'system';
+document.documentElement.style.setProperty('color-scheme', themeSelector.value);
+
+// Listen for changes to the theme selector and update the color scheme accordingly
 themeSelector.addEventListener('input', function (event) {
   console.log('color scheme changed to', event.target.value);
   document.documentElement.style.setProperty('color-scheme', event.target.value);
-
 });
 
-
-themeSelector.addEventListener('change', (event) => {
-  let selectedTheme = event.target.value;
-  document.documentElement.setAttribute('data-theme', selectedTheme);
-  localStorage.setItem('theme', selectedTheme);
-});
-
-// Load saved theme from localStorage
-let savedTheme = localStorage.getItem('theme') || 'system';
-themeSelector.value = savedTheme;
-document.documentElement.setAttribute('data-theme', savedTheme);
 
 themeLabel.appendChild(themeSelector);
 document.body.prepend(themeLabel);
