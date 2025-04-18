@@ -101,6 +101,7 @@ nav {
               border-bottom-style: solid;
               border-bottom-color: var(--color-accent);
               padding-bottom: 0.5px;
+              background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
             }
           }
       }
