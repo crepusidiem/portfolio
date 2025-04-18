@@ -46,6 +46,11 @@ for (let p of pages) {
         a.target = '_blank';
     }
 
+    if (a.host === location.host && a.pathname === location.pathname) {
+        a.classList.add('current');
+    }
+      
+
     li.appendChild(a);
     ul.appendChild(li);
   }
