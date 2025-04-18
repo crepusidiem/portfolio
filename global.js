@@ -74,6 +74,13 @@ for (let theme of themes) {
   themeSelector.appendChild(option);
 }
 
+themeSelector.addEventListener('input', function (event) {
+  console.log('color scheme changed to', event.target.value);
+  document.documentElement.style.setProperty('color-scheme', event.target.value);
+
+});
+
+
 themeSelector.addEventListener('change', (event) => {
   let selectedTheme = event.target.value;
   document.documentElement.setAttribute('data-theme', selectedTheme);
