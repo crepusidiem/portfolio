@@ -95,4 +95,3 @@ if ("colorScheme" in localStorage) {
 
 themeLabel.appendChild(themeSelector);
 document.body.prepend(themeLabel);
-  
