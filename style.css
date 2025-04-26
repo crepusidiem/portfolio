@@ -7,8 +7,15 @@
   text-align: center;
 }
 
-p {
+p.cover {
   text-wrap: balance;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
 }
 
 h1, h2, h3, h4 {
@@ -195,4 +202,42 @@ article {
   top: 1em;
   right: 1em;
   font: 80%/1.5 Georgia, serif;
+}
+
+#profile-stats {
+  text-align: center;
+  margin: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+#profile-stats h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* Space between blocks */
+  flex-wrap: wrap; /* Mobile responsive */
+}
+
+.stat-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6c757d; /* light gray color */
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
 }

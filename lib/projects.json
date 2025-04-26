@@ -1,62 +1,62 @@
 [
-    {
-      "title": "Lorem ipsum dolor sit.",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Lorem ipsum dolor sit.\n                "
-    },
-    {
-      "title": "Quos totam dolorum quod.",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Ab voluptates sequi quis?\n                "
-    },
-    {
-      "title": "Reprehenderit, eum! Numquam, sapiente.",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Consequatur incidunt possimus in?\n                "
-    },
-    {
-      "title": "Aliquam nam hic voluptates.",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Consectetur exercitationem praesentium voluptatem.\n                "
-    },
-    {
-      "title": "Accusamus ducimus ea est!",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Veniam eum sit rerum.\n                "
-    },
-    {
-      "title": "Doloremque commodi iste nostrum?",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Voluptates sit amet architecto.\n                "
-    },
-    {
-      "title": "Nemo repudiandae minima harum?",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Dolore aperiam ab voluptates.\n                "
-    },
-    {
-      "title": "Ducimus laborum quisquam neque.",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Ipsam minus inventore deleniti?\n                "
-    },
-    {
-      "title": "Minus officiis non harum?",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Cupiditate exercitationem omnis obcaecati!\n                "
-    },
-    {
-      "title": "Deleniti officia debitis corporis.",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Quasi qui neque iusto!\n                "
-    },
-    {
-      "title": "Ea, facere? Accusamus, illum.",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Totam deleniti dolorum et?\n                "
-    },
-    {
-      "title": "Fuga quia recusandae facere?",
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n                Voluptatem temporibus at architecto?\n                "
-    }
-  ]
+  {
+    "title": "DeepSeek And Its Applications in Biomedical Research",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2025",
+    "description": "\nBy deploying the deepseek R1 model to the server and fine tune with biomedical data on downstream tasks, we are now able to utilize it better in the feild of bioinfomatics.\n                "
+  },
+  {
+    "title": "Tesla Stock Price Prediction with Q-Learning.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2025",
+    "description": "\nBy deploying a classic probalistic learning approach, we get to explore how this can be effective in stock markets.\n                "
+  },
+  {
+    "title": "Bank Marketing",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2024",
+    "description": "\nA Naive Bayes Model is trained to evaluate the risk of lending to specific clients\n                "
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2024",
+    "description": "\n                Lorem ipsum dolor sit.\n                "
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2024",
+    "description": "\n                Lorem ipsum dolor sit.\n                "
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2024",
+    "description": "\n                Lorem ipsum dolor sit.\n                "
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2024",
+    "description": "\n                Lorem ipsum dolor sit.\n                "
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2024",
+    "description": "\n                Lorem ipsum dolor sit.\n                "
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2024",
+    "description": "\n                Lorem ipsum dolor sit.\n                "
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2024",
+    "description": "\n                Lorem ipsum dolor sit.\n                "
+  }
+]
