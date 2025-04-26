@@ -113,7 +113,7 @@ export async function fetchJSON(url) {
   }
 }
 
-export function renderProjects(project, containerElement, headingLevel = 'h2') {
+export function renderProject(project, containerElement, headingLevel = 'h2') {
   // Your code will go here
   const validHeadings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
     if (!validHeadings.includes(headingLevel)) {
@@ -121,7 +121,6 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
         headingLevel = 'h2'; // Default to h2 if invalid heading level is provided
     }
   
-  containerElement.innerHTML = '';
   const article = document.createElement('article');
   article.innerHTML = `
     <${headingLevel}>${project.title}</${headingLevel}>
