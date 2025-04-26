@@ -18,10 +18,10 @@
     "description": "\nA Naive Bayes Model is trained to evaluate the risk of lending to specific clients\n                "
   },
   {
-    "title": "Lorem ipsum dolor sit.",
+    "title": "ViT or CNN? A Comparative Study of Image Classification Models via chest X-ray",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "year": "2024",
-    "description": "\n                Lorem ipsum dolor sit.\n                "
+    "description": "\nBy training series of ViT (Visual Transformers) and CNN on the latest public chest X-ray dataset released by Emory University, we get to evaluate the performances in biomedical studies\n                "
   },
   {
     "title": "Lorem ipsum dolor sit.",
