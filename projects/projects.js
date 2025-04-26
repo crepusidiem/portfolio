@@ -1,26 +1,16 @@
-import { fetchJSON, renderProject } from "../global.js";
-
-function renderProjects(projects, containerElement, headingLevel) {
-    if (!(containerElement instanceof Element)) {
-      console.error('Invalid container element');
-      return;
-    }
-  
-    containerElement.innerHTML = ''; // Clear existing content
-  
-    projects.forEach((project) => {
-      renderProject(project, containerElement, headingLevel);
-    });
-  }
+import { fetchJSON, renderProjects } from "../global.js";
   
 // Fetch the projects data from the JSON file
 const projects = await fetchJSON('../lib/projects.json');
 
 // Append a heading to the body
-console.log(projects.length + ' Projects');
+const nav = document.querySelector('nav');
 const heading = document.createElement('h1');
 heading.textContent = projects.length + ' Projects';
-document.body.append(heading);
+
+if (nav && nav.parentNode) {
+  nav.parentNode.insertBefore(heading, nav.nextSibling);
+}
 
 const projectsContainer = document.querySelector('.projects');
 renderProjects(projects, projectsContainer, 'h2');

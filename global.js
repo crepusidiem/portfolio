@@ -132,7 +132,18 @@ export function renderProject(project, containerElement, headingLevel = 'h2') {
   } else {
       console.warn('Warning: containerElement is null. Cannot append article.');
   }
+}
 
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  if (!(containerElement instanceof Element)) {
+    console.error('Invalid container element');
+    return;
+  }
 
+  containerElement.innerHTML = ''; // Clear existing content
+
+  projects.forEach((project) => {
+    renderProject(project, containerElement, headingLevel);
+  });
 }
 
