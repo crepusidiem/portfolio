@@ -2,8 +2,9 @@ import { fetchJSON, renderProject } from "../global.js";
 
 function renderProjects(projects, containerElement, headingLevel) {
   // Iterate through projects and render each project using renderProject function
+
+  containerElement.innerHTML = ''; // Clear the container before appending new projects
   projects.forEach((project) => {
-    containerElement.innerHTML = ''; // Clear the container before appending new projects
     const projectElement = renderProject(project, containerElement, headingLevel); // Pass the containerElement to renderProject to append an article
   });
 }
