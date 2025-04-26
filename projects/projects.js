@@ -1,13 +1,18 @@
 import { fetchJSON, renderProject } from "../global.js";
 
 function renderProjects(projects, containerElement, headingLevel) {
-  // Iterate through projects and render each project using renderProject function
-
-  containerElement.innerHTML = ''; // Clear the container before appending new projects
-  projects.forEach((project) => {
-    const projectElement = renderProject(project, containerElement, headingLevel); // Pass the containerElement to renderProject to append an article
-  });
-}
+    if (!(containerElement instanceof Element)) {
+      console.error('Invalid container element');
+      return;
+    }
+  
+    containerElement.innerHTML = ''; // clear once!
+  
+    projects.forEach((project) => {
+      renderProject(project, containerElement, headingLevel);
+    });
+  }
+  
 // Fetch the projects data from the JSON file
 const projects = await fetchJSON('../lib/projects.json');
 
