@@ -24,51 +24,51 @@
     "description": "\nBy training series of ViT (Visual Transformers) and CNN on the latest public chest X-ray dataset released by Emory University, we get to evaluate the performances in biomedical studies\n                "
   },
   {
-    "title": "Lorem ipsum dolor sit.",
+    "title": "Interpretable AI: Attention Map",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "year": "2024",
+    "description": "\nIn order to explain the focus of transformer models and interpret its performance, I implemented the attention map to reveal its focus in the application of image classifications.\n"
+  },
+  {
+    "title": "Investigation Towards Recipes",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2024",
+    "description": "\nThis project aims to showcase a thorough analysis on the dataset from food.com.\n                "
+  },
+  {
+    "title": "XGBoost Regression on House Prices",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2023",
+    "description": "\nTrained a XGBoost Model to predict house price on the dataset from AirBnB with a rmse of 53.23.\n                "
+  },
+  {
+    "title": "Place-holder 2023 (1).",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "year": "2023",
     "description": "\n                Lorem ipsum dolor sit.\n                "
   },
   {
-    "title": "Lorem ipsum dolor sit.",
+    "title": "Place-holder 2023 (2).",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "year": "2024",
+    "year": "2023",
     "description": "\n                Lorem ipsum dolor sit.\n                "
   },
   {
-    "title": "Lorem ipsum dolor sit.",
+    "title": "Place-holder 2023 (3).",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "year": "2024",
+    "year": "2023",
     "description": "\n                Lorem ipsum dolor sit.\n                "
   },
   {
-    "title": "Lorem ipsum dolor sit.",
+    "title": "Place-holder 2023 (4).",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "year": "2024",
+    "year": "2023",
     "description": "\n                Lorem ipsum dolor sit.\n                "
   },
   {
-    "title": "Lorem ipsum dolor sit.",
+    "title": "Place-holder 2022.",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "year": "2024",
-    "description": "\n                Lorem ipsum dolor sit.\n                "
-  },
-  {
-    "title": "Lorem ipsum dolor sit.",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "year": "2024",
-    "description": "\n                Lorem ipsum dolor sit.\n                "
-  },
-  {
-    "title": "Lorem ipsum dolor sit.",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "year": "2024",
-    "description": "\n                Lorem ipsum dolor sit.\n                "
-  },
-  {
-    "title": "Lorem ipsum dolor sit.",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "year": "2024",
+    "year": "2022",
     "description": "\n                Lorem ipsum dolor sit.\n                "
   }
 ]
