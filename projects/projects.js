@@ -8,6 +8,7 @@ const projects = await fetchJSON('../lib/projects.json');
 
 let selectedIndex = -1; // Initialize selectedIndex to -1
 
+
 // Render the projects in the container
 const nav = document.querySelector('nav');
 const heading = document.createElement('h1');
@@ -18,7 +19,9 @@ if (nav && nav.parentNode) {
 }
 
 const projectsContainer = document.querySelector('.projects');
+
 renderProjects(projects, projectsContainer, 'h2');
+
 
 // Refactor all plotting into one function
 function renderPieChart(projectsGiven) {
@@ -32,6 +35,7 @@ function renderPieChart(projectsGiven) {
   let newData = newRolledData.map(([year, count]) => {
     return { value: count, label: year };
   });
+
   // re-calculate slice generator, arc data, arc, etc.
   let newSliceGenerator = d3.pie().value((d) => d.value)
   let newArcData = newSliceGenerator(newData);
@@ -58,7 +62,18 @@ function renderPieChart(projectsGiven) {
           // update *all* legend items
           d3.select('.legend').selectAll('li')
             .classed('selected', (_, i) => i === selectedIndex);
+
+          if (selectedIndex === -1) {
+            renderProjects(projects, projectsContainer, 'h2');
+          } else {
+            let projectsToShow = projectsGiven.filter((project) => {
+              return project.year === newData[selectedIndex].label;
+            });
+            renderProjects(projectsToShow, projectsContainer, 'h2');
+          }
         });
+        
+        
   });
 
   // draw legend items (no click handler here!)
