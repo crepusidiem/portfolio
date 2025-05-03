@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script type="module" src="./projects.js"></script>
     <script type="module" src="../global.js"></script>
     <title>Projects</title>
 </head>
 <body>
-    <!-- <h1>Projects</h1> -->
+    <div id="project-display">
+        <svg id="projects-plot" viewBox="-50 -50 100 100"></svg>
+
+        <ul class="legend"></ul>
+    </div>
+    
+    <div class="search-container">
+        <input type="text" name="search" placeholder="Search..." class="search-input">
+        <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>      
+        </a>
+    </div>
     <div class="projects">
     </div>
+
+    
+
 </body>
 </html>

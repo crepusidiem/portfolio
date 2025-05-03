@@ -125,7 +125,7 @@ export function renderProject(project, containerElement, headingLevel = 'h2') {
     <${headingLevel}>${project.title}</${headingLevel}>
     <img src="${project.image}" alt="${project.title}">
     <p>${project.description}</p>
-    <p style="font-family: Baskerville; color: gray; font-variant-numeric: oldstyle-nums">${project.year}</p> 
+    <p style="font-family: Baskerville; color: gray; font-variant-numeric: oldstyle-nums; margin: 0px">${project.year}</p> 
   `;
 
   if (containerElement) {
